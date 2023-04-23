@@ -1,7 +1,7 @@
 const fs = require('fs')
 const zlib = require('zlib')
 
-// highWatermark option limits the Buffer size 
+// highWaterMark option limits the Buffer size 
 // which helps in reducing the memory usage on the server
 const readable = fs.createReadStream(__dirname + '/greet.txt',
 { encoding: 'utf8', highWaterMark: 16 * 1024 });
