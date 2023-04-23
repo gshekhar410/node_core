@@ -1,0 +1,35 @@
+1. javaScript is Sync
+
+2. NodeJS is Async
+
+3. NodeJS is Event Driven Non-Blocking I/O in V8 javaScript
+
+4. Async system events are processed with the help of libuv and 
+  event loop  
+
+5. Event loop checks the callback queue
+
+6. BWA - Buffer: A temporary holding spot for data being moved from
+         one place to another. Intentially limited in size.
+
+7. BWA - Stream: A sequence of data made available over time. 
+         Pieces of data that eventually combine into a whole.
+
+8. BWA - Binary data - Base 2 format data. Either 1 or 0 for
+         representing data. Awesome for computers. Easy to phsically represent 
+         it - the on and off states. Eg. Disks - a bump or a low
+
+9. In computers - everything we store is in binary i.e. 1s or 0s.
+   All types of data are converted to be stored. 
+
+10. BWA - Character set(Unicode or ASCII etc): A representation of characters as numbers.
+          Each character gets a number. Unicode and ASCII are character sets.
+    Note: For storing letters - We go from letter to number and number itself
+           is stored in binary further.
+
+11. BWA - Charcter Encoding(UTF-8 or UTF-16 etc): How characters are stored in binary.
+          The numbers(or code points) are converted and stored in binary.
+
+
+
+

@@ -1,0 +1,2 @@
+1. Chunk: A piece of data being sent through a stream.
+   Note: Data is split in 'chunks' and streamed

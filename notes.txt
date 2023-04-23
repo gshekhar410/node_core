@@ -1,0 +1,58 @@
+1. Module: A reusable block of code whose existence does 
+not accidently impact other code. 
+
+Note: In node once you import a module with the require function,
+module's code content is ran from top to bottom.
+
+2. In node we can choose what becomes available outside of my module in anything else 
+that uses my module. It is with feature of module.exports.
+
+3. Inheritance: One object gets access to the properties and methods of another object.
+
+Note: JS has prototypal Inheritance.
+
+4. Function constructor:  A normal function that is used to construct objects.
+
+Note: The 'this' variable points a new empty object, and 
+that object is returned from the function automatically.
+
+5. By Reference and By Value
+BWA: Primitive: A type of data that represents a single value.
+Eg. Number, string.
+
+Note: JS passes primitive values By Value & passes Non-primitives By Reference.
+Node: NodeJS takes advantage of Pass By Reference for objects in regards to how require and modules works.
+
+6. Scope: Where in code you have access to particular variable or function.
+
+7. IIFE: immeditely invoked function expression
+
+8. require() is a function that you pass a path to
+9. module.exports is what the require function returns
+
+10. BWA: JSON -> javaScript Object Notation: A standard for structuring
+  data that is inspired by javascript object literals.
+Note: Both property names and their values should be in quotes.
+
+11. The require function can read a json file and get object out of that.
+
+12. The require() function has the ability of caching the the module result.
+    So in case of us requiring the same module twice within a file, the require function returns \
+    the cached module and since module.exports is an object returned - it is thus returned by
+    Reference again and hence its gives the functions and objects poiting to old locations.
+Note: So using a generator/factory at the module.exports return doesn't guarantee new object every time you 
+      require the module.
+
+13. Revealing Module Pattern: Exposing omly the properties and methods you want via an returned object.
+    A very common and clean way to structure and protect code within modules.
+
+14. There is also and exports variable accessible for making functions and variable avialable to be used by importing of my module.
+    To use the exports syntax - make sure to mutate it to make functions and variables available to outside.
+    Not repoint it to new object or function as the what is returned by require functions is module.exports and exports also points
+    to the same memory location. So if you repoint exports variable to a new function or object, the memory location for exports 
+    variables changes and that is not being returned by require function further. 
+    But if you would mutate the exports objects, then both module.exports & exports will point to same memory location and 
+    expected thing will be returned.
+
+Note: please note NodeJS runtine makes us available the module.exports and exports in our code modules. What we write is just the 
+      body of module and NodeJS runtine adds on many features to it. 
